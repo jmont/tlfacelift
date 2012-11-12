@@ -1,0 +1,14 @@
+.column {
+}
+
+#currentColumn {
+	background-color: #ff0f00;
+}
+
+#listingsColumn {
+	background-color: #10ff1c;
+}
+
+#eventsColumn {
+	background-color: #00ffe7;
+}

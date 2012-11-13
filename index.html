@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>TuftsLife</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
     <link href="css/index.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -9,10 +10,38 @@
     <script src="js/index.js"></script>
 </head>
 
-<body>
-<header>
-    <h1>Tuftslife!</h1>
+<header class="container-fluid">
+<div id="tlnav" class="navbar">
+<div class="navbar-inner">
+<div class="container">
+
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="#">TuftsLife</a>
+
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse">
+
+    <ul class="nav">
+        <li class="active"><a href="#">ABOUT</a></li>
+        <li><a href="#">USEFUL STUFF</a></li>
+        <li><a href="#">CAMPUS</a></li>
+        <li><a href="#">BOSTON</a></li>
+    </ul>
+      </div>
+</div>
+</div>
+</div>
+    
 </header>
+
+<body>
 <div id="content" class="container-fluid fill">
 <div class="row-fluid">
     <span class="span4 fill">

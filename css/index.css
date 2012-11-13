@@ -1,0 +1,100 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica;
+}
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+
+header {
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica;
+	color: white;
+	background-color: #3c2b21;
+}
+
+.column {
+    padding: 10px 10px;
+}
+
+.fill {
+    min-height: 100%;
+}
+
+.contentBox {
+    background-color: #f4f3ea;
+    color: #3c2b21;
+    margin-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bolder;
+    color: #3c2b21;
+    padding-bottom: 10px;
+}
+
+#currentColumn {
+	margin-top: 30px;
+}
+
+/*#listingsColumn {
+	background-color: #10ff1c;
+}
+
+#eventsColumn {
+	background-color: #00ffe7;
+}*/
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) { /* iPhone */
+    body {
+	   padding: 0px;
+	   margin: 0px;
+	   height: 100%;
+	   background-color: #f4f3ea;
+    }
+    
+    #content {
+       padding: 0px;
+	   margin: 0px;
+    }
+    
+    .column {
+        background-color: #ffffff;
+        margin: 0px 10px 20px 10px;
+    }
+}
+
+@media (max-width: 979px) {
+
+}
+
+@media (min-width: 980px) {
+
+}
+

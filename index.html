@@ -3,20 +3,28 @@
 <head>
     <title>TuftsLife</title>
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link href="css/index.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
 <header>
     <h1>Tuftslife!</h1>
 </header>
+<div id="content" class="container-fluid fill">
 <div class="row-fluid">
-    <div class="span4" id="currentColumn"></div>
-    <div class="span4" id="listingsColumn"></div>
-    <div class="span4" id="eventsColumn"></div>
+    <span class="span4 fill">
+        <div id="currentColumn" class="column"></div>
+    </span>
+    <span class="span4">
+        <div id="listingsColumn" class="column"></div>
+    </span>
+    <span class="span4">
+        <div id="eventsColumn" class="column"></div>
+    </span>
+</div>
 </div>
     
 </body>

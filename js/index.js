@@ -7,7 +7,7 @@ function init() {
     $("#currentColumn").append(weather);
     $("#currentColumn").append(news);
     
-    var title = "<div class=\"title\">LISTINGS</div>"
+    var title = "<div class=\"title bold\">LISTINGS</div>"
     var campus = "<div class=\"contentBox\" id=\"campus\">Campus</div>"
     var sublets = "<div class=\"contentBox\" id=\"sublets\">Sublets</div>"
     var jobs = "<div class=\"contentBox\" id=\"jobs\">Jobs</div>"
@@ -16,7 +16,7 @@ function init() {
     $("#listingsColumn").append(sublets);
     $("#listingsColumn").append(jobs);
     
-    title = "<div class=\"title\">EVENTS</div>"
+    title = "<div class=\"title bold\">EVENTS</div>"
     var today = "<div class=\"contentBox\" id=\"today\">Today</div>"
     var tomorrow = "<div class=\"contentBox\" id=\"tomorrow\">Tomorrow</div>"
     $("#eventsColumn").append(title);

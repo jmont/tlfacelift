@@ -1,7 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
-    	font-family: Helvetica !important;
+    font-family: Helvetica !important;
 }
 
 html, body {
@@ -9,6 +9,7 @@ html, body {
 	margin: 0px;
 	height: 100%;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 header {
@@ -62,7 +63,7 @@ header span {
 }
 
 #currentColumn {
-	margin-top: 30px;
+	padding-top: 30px;
 }
 
 #logo {
@@ -73,7 +74,7 @@ header span {
 
 #tlnav {
     width: inherit !important;
-    height: inherit !important;
+    height: auto !important;
     margin: 0 !important;
     position: absolute;
     left: 20%;
@@ -85,7 +86,8 @@ header span {
     margin-right: 20px;
 }
 
-/*#listingsColumn {
+/*
+#listingsColumn {
 	background-color: #10ff1c;
 }
 
@@ -110,6 +112,10 @@ header span {
 }
 
 @media (max-width: 767px) { /* Phones */
+    html , body {
+        overflow-y: auto;
+    }
+
     body {
 	   padding: 0px;
 	   margin: 0px;

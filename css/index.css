@@ -1,7 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	font-family: Helvetica;
+    	font-family: Helvetica !important;
 }
 
 html, body {
@@ -43,6 +43,11 @@ header span {
     min-height: 100%;
 }
 
+.bold {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
 .contentBox {
     background-color: #f4f3ea;
     color: #3c2b21;
@@ -60,15 +65,24 @@ header span {
 	margin-top: 30px;
 }
 
-#tlnav {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+#logo {
+    display: inline;
+    right: 20%;
     position: absolute;
-    width: auto;
-    height: auto;
+}
+
+#tlnav {
+    width: inherit !important;
+    height: inherit !important;
     margin: 0 !important;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+
+#tlnav li {
+    display: inline;
+    margin-right: 20px;
 }
 
 /*#listingsColumn {
@@ -95,11 +109,7 @@ header span {
 
 }
 
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 480px) { /* iPhone */
+@media (max-width: 767px) { /* Phones */
     body {
 	   padding: 0px;
 	   margin: 0px;
@@ -116,7 +126,34 @@ header span {
         background-color: #ffffff;
         margin: 0px 10px 20px 10px;
     }
+    
+    #logo {
+        left:20%;
+    }
+    
+    #tlnavBottom ul {
+        margin: 0 !important;
+    }
+    
+    #tlnavBottom li {
+        list-style: none;
+        text-align: center;
+        background-color: #3c2b21;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    
+    #tlnavBottom a {
+        color: white;
+    }
+    
+    #tlnavBottom a {
+        text-decoration: none;
+    }
 }
+
+@media (max-width: 480px) { 
+
 
 @media (max-width: 979px) {
 

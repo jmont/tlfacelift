@@ -24,6 +24,13 @@ function init() {
     $("#eventsColumn").append(tomorrow);
     
     evenOutChildren("#currentColumn");
+    
+    var navBar = $("#tlnav").clone();
+    navBar.attr("id","tlnavBottom");
+    var curClass = navBar.attr("class");
+    navBar.attr("class",curClass + " visible-phone column");
+    $("#content").append(navBar);
+    
 }
 
 function evenOutChildren(divID) {

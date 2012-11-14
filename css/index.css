@@ -47,6 +47,7 @@ header span {
 .bold {
     font-size: 1.2em;
     font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .contentBox {
@@ -143,18 +144,21 @@ header span {
     }
     
     #tlnavBottom li {
+        display: block;
+        height: 3em;
+        line-height: 3em;
         list-style: none;
         text-align: center;
         background-color: #3c2b21;
-        margin-bottom: 10px;\
+        margin-bottom: 10px;
         padding: 0;
     }
     
-    #tlnavBottom a {
+    #tlnavBottom li a {
         color: white;
     }
     
-    #tlnavBottom a {
+    #tlnavBottom li a {
         text-decoration: none;
     }
 }

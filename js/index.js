@@ -41,14 +41,13 @@ function evenOutChildren(divID) {
 }
 
 function sizing() {
-    var h = $(window).height() - $("header").height();
-    $("#currentColumn").height(h+"px");
+    var h = $(window).height() - 2*$("header").height();
+    var mar = parseInt($("#currentColumn").css("margin-top"),10);
+    $("#currentColumn").height((h-mar)+"px");
     $("#listingsColumn").height(h+"px");
     $("#eventsColumn").height(h+"px");
-    
-
 }
 
+$(window).load(init);
 $(document).ready(sizing);
 $(window).resize(sizing);
-$(window).load(init);

@@ -9,7 +9,6 @@ html, body {
 	margin: 0px;
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: hidden;
 }
 
 header {
@@ -36,8 +35,17 @@ header span {
     position: relative;
 }
 
+#content {
+    min-height: inherit !important;
+    margin: 0px 10px;
+    padding: 0;
+}
+
 .column {
     padding: 10px 10px;
+    background-color: #f4f3ea;
+    margin: 0px 10px 20px 10px;
+    box-shadow: 3px 3px #CCC;
 }
 
 .fill {
@@ -51,7 +59,7 @@ header span {
 }
 
 .contentBox {
-    background-color: #f4f3ea;
+    background-color: #ffffff;
     color: #3c2b21;
     margin-bottom: 10px;
 }
@@ -64,7 +72,7 @@ header span {
 }
 
 #currentColumn {
-	padding-top: 30px;
+	margin-top: 40px;
 }
 
 #logo {
@@ -129,6 +137,12 @@ header span {
 	   margin: 0px;
     }
     
+    .contentBox {
+        background-color: #f4f3ea;
+        color: #3c2b21;
+        margin-bottom: 10px;
+    }
+
     .column {
         background-color: #ffffff;
         margin: 0px 10px 20px 10px;
@@ -164,6 +178,8 @@ header span {
 }
 
 @media (max-width: 480px) { 
+
+}
 
 
 @media (max-width: 979px) {

@@ -43,9 +43,8 @@ header span {
 
 .column {
     padding: 10px 10px;
-    background-color: #f4f3ea;
+    background-color: #ffffff;
     margin: 0px 10px 20px 10px;
-    box-shadow: 3px 3px #CCC;
 }
 
 .fill {
@@ -59,7 +58,7 @@ header span {
 }
 
 .contentBox {
-    background-color: #ffffff;
+    background-color: #f4f3ea;
     color: #3c2b21;
     margin-bottom: 10px;
 }
@@ -79,6 +78,14 @@ header span {
     display: inline;
     right: 20%;
     position: absolute;
+}
+
+#logo img{
+    width: 180px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f4f3ea;
+    box-shadow: 3px 3px #CCC;
 }
 
 #tlnav {
@@ -151,6 +158,10 @@ header span {
     
     #logo {
         left:20%;
+    }
+    
+    #logo img{
+          
     }
     
     #tlnavBottom ul {

@@ -47,6 +47,30 @@ header span {
     margin: 0px 10px 20px 10px;
 }
 
+.boxTitle {
+	background-color: #f4f3ea;
+	box-shadow: 2px 2px #EEE;
+	padding-left: 10px;
+	margin-bottom: .4em;
+}
+
+.contentBox {
+    color: #3c2b21;
+}
+
+.contentBox .showMore {
+    font-style: italic;
+    color: #AAA;
+    list-style: none;
+    margin-left: 0;
+    text-indent: -1.3em;
+}
+
+.contentBox .showMore:before {
+    content: "+ ";
+    padding-right: .3em;
+}
+
 .fill {
     min-height: 100%;
 }
@@ -55,12 +79,6 @@ header span {
     font-size: 1.2em;
     font-weight: bolder;
     text-transform: uppercase;
-}
-
-.contentBox {
-    background-color: #f4f3ea;
-    color: #3c2b21;
-    margin-bottom: 10px;
 }
 
 .title {
@@ -94,12 +112,19 @@ header span {
     margin: 0 !important;
     position: absolute;
     left: 0%;
-    top: 30%;
+    top: 35%;
 }
 
 #tlnav li {
     display: inline;
     margin-right: 20px;
+}
+
+#smallMenu {
+    display: block;
+    position: absolute;
+    right: 20%;
+    top: 35%;
 }
 
 /*
@@ -145,7 +170,6 @@ header span {
     }
     
     .contentBox {
-        background-color: #f4f3ea;
         color: #3c2b21;
         margin-bottom: 10px;
     }

@@ -1,28 +1,19 @@
+// displayList("#topLevel", strList);
+// add every string in strList as buttons to #topLevel
+
+//next step: with JQuery, add event listener. So when button is pushed, call a js fucntion
+function displayList(divid, strList) {
+	for (i in strList)
+		{
+			var button = "<a class=\"categoryButton\">" + strList[i] + "</a>"
+   			$(divid).append(button);
+		}
+	}
+	
 function init() {
     //fill columns using content here
-    var tickets = "<a class=\"categoryButton\">Tickets</a>"
-    var music = "<a class=\"categoryButton\">Music</a>"
-    var events = "<div class=\"contentBox\" id=\"events\">Events</div>"
-    var transportaion = "<div class=\"contentBox\" id=\"transportation\">Transportation</div>"
-    $("#topLevel").append(tickets);
-    $("#topLevel").append(music);
-    
-    var title = "<div class=\"title bold\">LISTINGS</div>"
-    var campus = "<div class=\"contentBox\" id=\"campus\">Campus</div>"
-    var sublets = "<div class=\"contentBox\" id=\"sublets\">Sublets</div>"
-    var jobs = "<div class=\"contentBox\" id=\"jobs\">Jobs</div>"
-    $("#listingsColumn").append(title);
-    $("#listingsColumn").append(campus);
-    $("#listingsColumn").append(sublets);
-    $("#listingsColumn").append(jobs);
-    
-    title = "<div class=\"title bold\">EVENTS</div>"
-    var today = "<div class=\"contentBox\" id=\"today\">Today</div>"
-    var tomorrow = "<div class=\"contentBox\" id=\"tomorrow\">Tomorrow</div>"
-    $("#eventsColumn").append(title);
-    $("#eventsColumn").append(today);
-    $("#eventsColumn").append(tomorrow);
-    
+	var test=["hello" , "world"];
+	displayList("#topLevel", test);
     evenOutChildren("#currentColumn");
     
     var navBar = $("#tlnav").clone();

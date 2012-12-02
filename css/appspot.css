@@ -87,6 +87,15 @@ header span {
     padding-bottom: 10px;
 }
 
+.title2 {
+	text-align: left;
+	font-weight: bolder;
+	color: #3c2b21;
+	padding-bottom: 10px;
+	padding-top: 40px;
+	padding-left: 20px;/**/
+}
+
 #currentColumn {
 	margin-top: 40px;
 }
@@ -119,28 +128,26 @@ header span {
     margin-right: 20px;
 }
 
-/*
-#listingsColumn {
-	background-color: #10ff1c;
+.nav-header{
+	text-align: center;
+	text-fill-color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: inherit;
 }
 
-#eventsColumn {
-	background-color: #00ffe7;
-}*/
-
-@media (min-width: 768px) and (max-width: 979px) {
-
-}
-
-@media (max-width: 767px) {
-
+.sidebar-sort1{
+	margin-top:60px;
+	background-color: #3c2b21;
+    color: #ffffff;
+    text-align: center;
 }
 
 @media (min-width: 1200px) {
 
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 979px) { /* tablets */
 
 }
 

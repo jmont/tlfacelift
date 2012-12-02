@@ -5,15 +5,27 @@
 function displayList(divid, strList) {
 	for (i in strList)
 		{
-			var button = "<a class=\"categoryButton\">" + strList[i] + "</a>"
+			var button = "<a class=\"categoryButton\" onclick=buttonClicked(this)>" + strList[i] + "</a>"
    			$(divid).append(button);
 		}
+}
+
+function buttonClicked(but) {
+	console.log(but + " was clicked");
+	if ($(but).text() == "hello")
+	{
+		var test2=["goodbye" , "everyone"];
+		displayList("#listingsColumn", test2);
 	}
+	$("#listingsColumn").removeClass("hidden");
+}
 	
 function init() {
     //fill columns using content here
 	var test=["hello" , "world"];
 	displayList("#topLevel", test);
+	//var test2=["goodbye" , "everyone"];
+	//displayList("#listingsColumn", test2)
     evenOutChildren("#currentColumn");
     
     var navBar = $("#tlnav").clone();

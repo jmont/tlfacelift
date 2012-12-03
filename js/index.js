@@ -1,15 +1,15 @@
 function init() {
     //fill columns using content here
-    var links = "<div class=\"contentBox\" id=\"links\">Links</div>"
-    var weather = "<div class=\"contentBox\" id=\"weather\">Weather</div>"
-    var news = "<div class=\"contentBox\" id=\"news\">News</div>"
+    var links = "<div class=\"contentBox\" id=\"links\"><div class=\"boxTitle\">Links</div></div>"
+    var weather = "<div class=\"contentBox\" id=\"weather\"><div class=\"boxTitle\">Weather</div></div>"
+    var news = "<div class=\"contentBox\" id=\"news\"><div class=\"boxTitle\">News</div></div>"
     $("#currentColumn").append(links);
     $("#currentColumn").append(weather);
     $("#currentColumn").append(news);
     
     var ul = "<ul class=\"listingList\"> \
-              <li>Hi</li> \
-              <li>Hello</li> \
+              <li>Hi really really long one here yes let's see how this works ok </li> \
+              <li>Hello ok here goes nothing ok ok</li> \
               <li>Test</li> \
               <li>wow</li> \
               <li>no way</li> \
@@ -29,16 +29,44 @@ function init() {
     $("#listingsColumn").append(jobs);
     $("#jobs").append(ul);
     
+    var ul = "<ul class=\"eventsList\"> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today yay wow hyay wow hyay wow hyay wow hyay wow hyay wow hyay wow how are we goint to fo</div></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
+              </ul>"
+
     title = "<div class=\"title bold\">EVENTS</div>"
     var today = "<div class=\"contentBox\" id=\"today\"><div class=\"boxTitle\">Today</div></div>"
     var tomorrow = "<div class=\"contentBox\" id=\"tomorrow\"><div class=\"boxTitle\">Tomorrow</div></div>"
     $("#eventsColumn").append(title);
     $("#eventsColumn").append(today);
+    $("#today").append(ul);
     $("#eventsColumn").append(tomorrow);
-    
+    $("#tomorrow").append(ul);
+
+    alternateColor(".eventContainer");
+    fixText();
+
     evenOutChildren("#currentColumn");
 
     mkBottomMenu();    
+}
+
+function fixText() {
+    $(".eventText").ellipsis();
+    $(".listingList li").ellipsis();
+}
+
+function alternateColor(divc) {
+    var divs = $(divc);
+    var flag = false;
+    for (var i = 0; i < divs.length; i++) {
+        if (flag) $(divs[i]).addClass("everyOther");
+        flag = !flag;
+    }
 }
 
 function mkBottomMenu() {
@@ -62,6 +90,8 @@ function sizing() {
     $("#currentColumn").height((h-mar)+"px");
     $("#listingsColumn").height(h+"px");
     $("#eventsColumn").height(h+"px");
+
+    fixText();
 }
 
 $(window).load(init);

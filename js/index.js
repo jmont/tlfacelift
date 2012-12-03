@@ -57,7 +57,12 @@ function init() {
 
 function fixText() {
     $(".eventText").ellipsis();
-    $(".listingList li").ellipsis();
+    //filter listingList to not ellpise show more
+    var listings = $(".listingList li");
+    for (var i = 0; i < listings.length; i++) {
+        if ($(listings[i]).attr("class") != "showMore")
+            $(listings[i]).ellipsis();
+    }
 }
 
 function alternateColor(divc) {

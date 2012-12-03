@@ -1,26 +1,39 @@
 function init() {
     //fill columns using content here
-    var links = "<div class=\"contentBox\" id=\"links\"><div class=\"boxTitle\">Links</div></div>"
+    var links = "<div class=\"contentBox\" id=\"links\"><div class=\"boxTitle\">Links</div> \
+                 <div id='linkGrid' class='container-fluid'> \
+                 <div class='row-fluid'>  \
+				    <div class='span4'>Tufts Email</div>  \
+				    <div class='span4'>Trunk</div>  \
+				    <div class='span4'>SIS</div>  \
+			     </div> \
+			     <div class='row-fluid'>  \
+				    <div class='span4'>Webcenter</div>  \
+				    <div class='span4'>Bulletin</div>  \
+				    <div class='span4'>Blogs</div>  \
+			     </div> \
+			     </div> \
+                 </div>"
     var weather = "<div class=\"contentBox\" id=\"weather\"><div class=\"boxTitle\">Weather</div></div>"
     var news = "<div class=\"contentBox\" id=\"news\"><div class=\"boxTitle\">News</div></div>"
     $("#currentColumn").append(links);
     $("#currentColumn").append(weather);
     $("#currentColumn").append(news);
     
-    var ul = "<ul class=\"listingList\"> \
+    var ul = "<ul class='listingList'> \
               <li>Hi really really long one here yes let's see how this works ok </li> \
               <li>Hello ok here goes nothing ok ok</li> \
               <li>Test</li> \
               <li>wow</li> \
               <li>no way</li> \
               <li>Hi</li> \
-              <li class=\"showMore\">Show more listings...</li> \
+              <li class='showMore'>Show more listings...</li> \
               </ul>"
 
-    var title = "<div class=\"title bold\">LISTINGS</div>"
-    var campus = "<div class=\"contentBox\" id=\"campus\"><div class=\"boxTitle\">Campus</div></div>"
-    var sublets = "<div class=\"contentBox\" id=\"sublets\"><div class=\"boxTitle\">Sublets</div></div>"
-    var jobs = "<div class=\"contentBox\" id=\"jobs\"><div class=\"boxTitle\">Jobs</div></div>"
+    var title = "<div class='title bold'>LISTINGS</div>"
+    var campus = "<div class='contentBox' id='campus'><div class='boxTitle'>Campus</div></div>"
+    var sublets = "<div class='contentBox' id='sublets'><div class='boxTitle'>Sublets</div></div>"
+    var jobs = "<div class='contentBox' id='jobs'><div class='boxTitle'>Jobs</div></div>"
     $("#listingsColumn").append(title);
     $("#listingsColumn").append(campus);
     $("#campus").append(ul);

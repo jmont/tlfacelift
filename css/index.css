@@ -54,6 +54,10 @@ header span {
 	margin-bottom: .4em;
 }
 
+#linkGrid {
+    padding-left: 10px;
+}
+
 .contentBox {
     color: #3c2b21;
     height: auto;

@@ -5,24 +5,24 @@
 function displayList(divid, strList) {
 	for (i in strList)
 		{
-			var button = "<a class=\"categoryButton\" onclick=buttonClicked(this)>" + strList[i] + "</a>"
+			var button = "<a class=\"categoryButton\" onclick=buttonClicked(this)>" + strList[i] + "</a>";
    			$(divid).append(button);
 		}
 }
 
 function buttonClicked(but) {
 	console.log(but + " was clicked");
-	if ($(but).text() == "hello")
+	if ($(but).text() == "STUDENT GROUPS")
 	{
 		var test2=["goodbye" , "everyone"];
-		displayList("#listingsColumn", test2);
+		displayList("#secondLevel", test2);
 	}
 	$("#listingsColumn").removeClass("hidden");
 }
 	
 function init() {
     //fill columns using content here
-	var test=["hello" , "world"];
+	var test=["TUFTS DIRECTORY" ,"STUDENT GROUPS" ,"FOOD" ,"DISCOUNTS" ,"STUDENT TOOLS" ];
 	displayList("#topLevel", test);
 	//var test2=["goodbye" , "everyone"];
 	//displayList("#listingsColumn", test2)

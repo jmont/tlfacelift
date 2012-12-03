@@ -36,12 +36,14 @@ header span {
 }
 
 .categoryButton {
+	padding-top: 20px;
 	background-color: #f4f3ea;
 	display: block;
 	margin-bottom: .8em;
 	height: 3em;
 	text-align: center;
-	color: white;
+	color: #3c2b21;
+	font-size: 1.2em;
 }
 
 #content {
@@ -75,9 +77,10 @@ header span {
 }
 
 .contentBox {
-    background-color: #f4f3ea;
+    background-color: #f4f3ea; 
     color: #3c2b21;
     margin-bottom: 10px;
+    font-family: inherit;
 }
 
 .title {
@@ -163,7 +166,7 @@ header span {
     
     .contentBox {
         background-color: #f4f3ea;
-        color: #3c2b21;
+		color: #3c2b21;
         margin-bottom: 10px;
     }
 

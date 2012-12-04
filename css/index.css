@@ -54,8 +54,13 @@ header span {
 	margin-bottom: .4em;
 }
 
+#linkGrid {
+    padding-left: 10px;
+}
+
 .contentBox {
     color: #3c2b21;
+    height: auto;
 }
 
 .contentBox .showMore {
@@ -125,6 +130,45 @@ header span {
     position: absolute;
     right: 20%;
     top: 35%;
+}
+
+.listingList li {
+    height: 1.5em;
+}
+
+.eventsList {
+    margin: 0 0 20px 0;
+}
+
+.eventsList li {
+    list-style: none;
+}
+
+.eventContainer {
+    height: 44px;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.eventDate {
+    display: inline;
+    float: left;
+    width: 18%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.eventText {
+    display: block;
+    float: right;
+    height: inherit !important;
+    width: 80%;
+    overflow: hidden;
+    font-weight: 100;
+}
+
+.everyOther {
+    background-color: #f4f3ea;
 }
 
 /*

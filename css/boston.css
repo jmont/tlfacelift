@@ -36,14 +36,41 @@ header span {
 }
 
 .categoryButton {
-	padding-top: 20px;
+	padding-top: 1em;
 	background-color: #f4f3ea;
 	display: block;
 	margin-bottom: .8em;
-	height: 3em;
+	height: 2em;
 	text-align: center;
 	color: #3c2b21;
 	font-size: 1.2em;
+}
+
+.categoryButtonLight {
+	padding-top: 8px;
+	background-color: #ffffff;
+	display: block;
+	margin-bottom: .3em;
+	height: 1.5em;
+	text-align: center;
+	color: #3c2b21;
+	font-size: 1.2em;
+}
+
+.categoryButtonDark {
+	padding-top: 8px;
+	background-color: #f4f3ea;
+	display: block;
+	margin-top: 0;
+	height: 1.5em;
+	text-align: center;
+	color: #3c2b21;
+	font-size: 1.2em;
+}
+
+.blue {
+	background-color: #448ce5;
+	color: #f4f3ea;
 }
 
 #content {
@@ -56,11 +83,26 @@ header span {
 	margin: .3em;
 	background-color: #ffffff;
 	height: inherit !important;
-	padding: .8em;
+	padding: .7em; /* white background */
 	box-shadow: 3px 3px #EEE;
 }
 
 .column {
+    padding: 5px 5px; /*beige background*/
+    background-color: #f4f3ea;
+    margin: 0px 10px 20px 10px;
+    box-shadow: 3px 3px #EEE;
+}
+
+.LcontentBackground {
+	margin: .3em;
+	background-color: #ffffff;
+	height: inherit !important;
+	padding: .8em;
+	box-shadow: 3px 3px #EEE;
+}
+
+.Lcolumn {
     padding: 10px 10px;
     background-color: #f4f3ea;
     margin: 0px 10px 20px 10px;

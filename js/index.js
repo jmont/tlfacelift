@@ -15,7 +15,13 @@ function init() {
 			     </div> \
                  </div>"
     var weather = "<div class=\"contentBox\" id=\"weather\"><div class=\"boxTitle\">Weather</div></div>"
-    var news = "<div class=\"contentBox\" id=\"news\"><div class=\"boxTitle\">News</div></div>"
+
+    var news = "<div class=\"contentBox\" id=\"news\"><div class=\"boxTitle\">News</div> \
+                <div id='newsimg' class='crop'> \
+                <img src='img/park.jpg'></img> \
+                </div> \
+                </div>"
+
     $("#currentColumn").append(links);
     $("#currentColumn").append(weather);
     $("#currentColumn").append(news);
@@ -108,10 +114,11 @@ function sizing() {
     $("#currentColumn").height((h-mar)+"px");
     $("#listingsColumn").height(h+"px");
     $("#eventsColumn").height(h+"px");
-
-    fixText();
 }
 
 $(window).load(init);
 $(document).ready(sizing);
-$(window).resize(sizing);
+//$(window).resize(sizing);
+
+$(document).ready(fixText);
+$(window).resize(fixText);

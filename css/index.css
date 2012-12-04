@@ -172,6 +172,13 @@ header span {
     background-color: #f4f3ea;
 }
 
+#newsimg {
+    margin-top: -4px;
+}
+
+.crop { height: 200px; overflow: hidden; }
+.crop img { height: auto; }
+
 /*
 #listingsColumn {
 	background-color: #10ff1c;

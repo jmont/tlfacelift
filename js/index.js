@@ -1,19 +1,11 @@
 function init() {
     //fill columns using content here
-    var links = "<div class=\"contentBox\" id=\"links\"><div class=\"boxTitle\">Links</div> \
-                 <div id='linkGrid' class='container-fluid'> \
-                 <div class='row-fluid'>  \
-				    <div class='span4'>Tufts Email</div>  \
-				    <div class='span4'>Trunk</div>  \
-				    <div class='span4'>SIS</div>  \
-			     </div> \
-			     <div class='row-fluid'>  \
-				    <div class='span4'>Webcenter</div>  \
-				    <div class='span4'>Bulletin</div>  \
-				    <div class='span4'>Blogs</div>  \
-			     </div> \
-			     </div> \
-                 </div>"
+    
+    var links = "<div class='contentBox' id='links'><div class='boxTitle'>Links</div> \
+                 <table id='linkGrid'> \
+                    <tr> <td>Tufts Email</td><td>Trunk</td> </tr> \
+                    <tr> <td>SIS</td><td>Webcenter</td> </tr> \
+                 </table></div>"
     var weather = "<div class=\"contentBox\" id=\"weather\"><div class=\"boxTitle\">Weather</div></div>"
 
     var news = "<div class=\"contentBox\" id=\"news\"><div class=\"boxTitle\">News</div> \

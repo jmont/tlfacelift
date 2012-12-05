@@ -57,11 +57,13 @@ header span {
 #linkGrid {
     padding-left: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .contentBox {
     color: #3c2b21;
     height: auto;
+    margin-bottom: 10px;
 }
 
 .contentBox .showMore {

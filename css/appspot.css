@@ -129,6 +129,8 @@ header span {
     margin-right: 20px;
 }
 
+/* begin my code */
+
 .nav-header{
 	text-align: center;
 	color: white;
@@ -145,9 +147,9 @@ header span {
 }
 
 .app-unit{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	/*display: block;*/
+	margin-left: 60px;
+	margin-right: 60px;
 	padding-top:50px;
 	padding-bottom:50px;
 	text-align: center;
@@ -162,6 +164,7 @@ header span {
 	margin-bottom: .8em;
 	height: 2em;
 	text-align: center;
+	font-weight: bold;
 	color: #3c2b21;
 	font-size: 1.2em;
 }
@@ -187,6 +190,8 @@ header span {
 	color: #3c2b21;
 	font-size: 1.2em;
 }
+
+/* end my code */
 
 @media (min-width: 1200px) {
 
@@ -235,7 +240,7 @@ header span {
     }
     
     #tlnavBottom li {
-        display: block;
+        /*display: block;*/
         height: 3em;
         line-height: 3em;
         list-style: none;

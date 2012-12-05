@@ -5,15 +5,21 @@ function init() {
     displayList("#sidebar", side_elems);
 
     //stuff to fill grid
-    var appfill = "<div class=\"app-unit\">\n\
-    <img width=\"75\" height=\"75\"src=\"img/filler.gif\" \
-    alt=\"filler.gif\" />\n<h6>Oops...trololol!</h6>\n</div>";
+    var appfill = "<div class=\"app-unit\">\n \
+    <img class=\"app-img\" width=\"75\" height=\"75\"src=\"img/filler.gif\" \
+    alt=\"filler.gif\" />\n<h6>Oops...trololol!</h6>\n \
+    <h7 class=\"author\">by Unknown</h7> \n </div>";
     
     for(var j=0; j<=2; j++){
     	for(var i=0; i<=2; i++){
     		$("#g-"+i+"-"+j).append(appfill);
     	}
     }
+    
+    var page_left = "<p id=\"leftarrow\">&lt;</p>"
+    var page_right = "<p id=\"rightarrow\">&gt;</p>"
+    $("#leftpage").append(page_left);
+    $("#rightpage").append(page_right);
     
     //existing code for navbar
     //aka dont touch
@@ -31,7 +37,7 @@ function init() {
 function displayList(id, aList) {
 	$(id).html("");
 	for (i in aList){
-			var it = "<a class=\"categoryButton\" onclick=buttonClicked(this)>" + aList[i] + "</a>";
+			var it = "<a class=\"categoryButton\" onclick=\"0\">" + aList[i] + "</a>";
    			$(id).append(it);
 	}
 }

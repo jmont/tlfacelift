@@ -16,6 +16,10 @@ function displayList2(divid, strList) {
 	$(divid).html("");
 	for (i in strList)
 		{
+			if (i == 0){
+				var button = "<p class=\"categoryHeader\">" + strList[i] + "</p>";
+				}
+			else{
 			//odds: button light, evens: button dark
 			if (i%2 == 0){
 				var button = "<a class=\"categoryButtonLight\" onclick=buttonClicked2(this)>" + strList[i] + "</a>";
@@ -23,9 +27,20 @@ function displayList2(divid, strList) {
 			else {
 				var button = "<a class=\"categoryButtonDark\" onclick=buttonClicked2(this)>" + strList[i] + "</a>";
 			}
+			}
    			$(divid).append(button);
 		}
 }
+
+function header(divid, strList) {
+	$(divid).html("");
+	for (i in strList)
+		{
+			var button = "<a class=\"categoryButton\" onclick=buttonClicked(this)>" + strList[i] + "</a>";
+   			$(divid).append(button);
+		}
+}
+
 
 function rmBlue(x){
 	$(x).removeClass("blue");
@@ -35,7 +50,9 @@ function buttonClicked(but) {
 	console.log(but + " was clicked");
 	if ($(but).text() == "Student Groups")
 	{
-		var test2=["Awesome" , "Acapella", "Academic", "Community", "Cultural / Religious", "Fraternities","Political", 
+		//var x = ["test"];
+		//header("#secondHeader", x);
+		var test2=["Student Groups", "Awesome" , "Acapella", "Academic", "Community", "Cultural / Religious", "Fraternities","Political", 
 			"Greek", "Media", "Miscellaneous", "Pre-Professional", "Programming Board", "Social Programming", "Sororities",
 			"Sports / Recreation", "Student Government"];
 		displayList2("#secondLevel", test2);
@@ -49,7 +66,7 @@ function buttonClicked2(but) {
 	console.log(but + " was clicked");
 	if ($(but).text() == "Acapella")
 	{
-		var test3=["Anchord", "S-Factor", "Shir Appeal", "sQ!", "Cultural / Religious", "The Ladies of Essence",
+		var test3=["Acapella", "Anchord", "S-Factor", "Shir Appeal", "sQ!", "Cultural / Religious", "The Ladies of Essence",
 			"The Beelzebubs", "Tufts Amalgamates", "Tufts Jaskson Jills"];
 		displayList2("#thirdLevel", test3);
 	}

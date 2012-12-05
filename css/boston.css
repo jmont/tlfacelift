@@ -68,6 +68,17 @@ header span {
 	font-size: 1.2em;
 }
 
+.categoryHeader {
+	padding-top: 1em;
+	background-color: #448ce5;
+	display: block;
+	margin-bottom: .8em;
+	height: 2em;
+	text-align: center;
+	color: #f4f3ea;
+	font-size: 1.2em;
+}
+
 .blue {
 	background-color: #448ce5;
 	color: #f4f3ea;

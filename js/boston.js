@@ -7,7 +7,7 @@ function displayList(divid, strList) {
 	$(divid).html("");
 	for (i in strList)
 		{
-			var button = "<a class=\"categoryButton\" onclick=buttonClicked(this)>" + strList[i] + "</a>";
+			var button = "<a class=\"categoryButton\" onclick=buttonClicked(this)><div class='buttonTxt'>" + strList[i] + "</div></a>";
    			$(divid).append(button);
 		}
 }
@@ -17,7 +17,7 @@ function displayList2(divid, strList) {
 	for (i in strList)
 		{
 			if (i == 0){
-				var button = "<p class=\"categoryHeader\">" + strList[i] + "</p>";
+				var button = "<div class=\"categoryHeader\" >" + strList[i] + "</div>";
 				}
 			else{
 			//odds: button light, evens: button dark
@@ -42,8 +42,8 @@ function header(divid, strList) {
 }
 
 
-function rmBlue(x){
-	$(x).removeClass("blue");
+function rmBrown(x){
+	$(x).removeClass("brown");
 }
 
 function buttonClicked(but) {
@@ -58,8 +58,8 @@ function buttonClicked(but) {
 		displayList2("#secondLevel", test2);
 	}
 	$("#listingsColumn").removeClass("hidden");
-	rmBlue.apply(null, $(".blue"));
-	$(but).addClass("blue");
+	rmBrown.apply(null, $(".brown"));
+	$(but).addClass("brown");
 }
 
 function buttonClicked2(but) {
@@ -71,8 +71,8 @@ function buttonClicked2(but) {
 		displayList2("#thirdLevel", test3);
 	}
 	$("#eventsColumn").removeClass("hidden");
-	rmBlue.apply(null, $(".blue"));
-	$(but).addClass("blue");
+	rmBrown.apply(null, $(".brown"));
+	$(but).addClass("brown");
 }
 
 	
@@ -100,11 +100,18 @@ function evenOutChildren(divID) {
 }
 
 function sizing() {
-    var h = $(window).height() - 2*$("header").height();
-    var mar = parseInt($("#currentColumn").css("margin-top"),10);
-    $("#currentColumn").height((h-mar)+"px");
-    $("#listingsColumn").height(h+"px");
-    $("#eventsColumn").height(h+"px");
+    var w = $(window).width();	
+	if (w > 767) { //Desktop
+		var h = $(window).height() - 2*$("header").height();	
+		var mar = parseInt($("#currentColumn").css("margin-top"),10);	
+		$("#currentColumn").height((h-mar)+"px");
+		$("#listingsColumn").height(h+"px");
+		$("#eventsColumn").height(h+"px");	
+		} else { //Mobile	
+		$("#currentColumn").height($("#currentColumn").scrollHeight + "px");	
+		$("#listingsColumn").height($("#listingsColumn").scrollHeight + "px");	
+		$("#eventsColumn").height($("#eventsColumn").scrollHeight + "px");	
+	}
 }
 
 $(window).load(init);

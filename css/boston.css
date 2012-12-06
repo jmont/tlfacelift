@@ -36,14 +36,18 @@ header span {
 }
 
 .categoryButton {
-	padding-top: 1em;
 	background-color: #f4f3ea;
 	display: block;
 	margin-bottom: .8em;
-	height: 2em;
+	height: 2.3em;
 	text-align: center;
 	color: #3c2b21;
-	font-size: 1.2em;
+	font-size: 1.8em;
+	font-weight: 600;
+}
+
+.buttonTxt {
+	line-height: 2.3em;
 }
 
 .categoryButtonLight {
@@ -69,18 +73,18 @@ header span {
 }
 
 .categoryHeader {
-	padding-top: 1em;
-	background-color: #448ce5;
+	background-color: #544234; //light brown
 	display: block;
 	margin-bottom: .8em;
-	height: 2em;
+	height: 2.3em;
 	text-align: center;
 	color: #f4f3ea;
-	font-size: 1.2em;
+	font-size: 1.8em;
+	line-height: 2.3em;
 }
 
-.blue {
-	background-color: #448ce5;
+.brown {
+	background-color: #544234;
 	color: #f4f3ea;
 }
 
@@ -90,12 +94,28 @@ header span {
     padding: 0;
 }
 
+#topLevel {
+	height: auto;
+}
+
+#secondLevel {
+	height: auto;
+}
+
+#thirdLevel {
+	height: auto;
+}
+
 .contentBackground {
 	margin: .3em;
 	background-color: #ffffff;
-	height: inherit !important;
+	height: inherit;
 	padding: .7em; /* white background */
-	box-shadow: 3px 3px #EEE;
+	box-shadow: 3px 3px #DDD;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 .column {
@@ -103,6 +123,7 @@ header span {
     background-color: #f4f3ea;
     margin: 0px 10px 20px 10px;
     box-shadow: 3px 3px #EEE;
+    overflow-y: scroll;
 }
 
 .LcontentBackground {
@@ -110,13 +131,14 @@ header span {
 	background-color: #ffffff;
 	height: inherit !important;
 	padding: .8em;
-	box-shadow: 3px 3px #EEE;
+	box-shadow: 3px 3px #DDD;
 }
 
 .Lcolumn {
     padding: 10px 10px;
     background-color: #f4f3ea;
     margin: 0px 10px 20px 10px;
+    overflow-y: scroll;
 }
 
 .fill {

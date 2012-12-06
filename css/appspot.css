@@ -34,15 +34,6 @@ header span {
     height: 100%;
     position: relative;
 }
-/*
-.categoryButton {
-	background-color: #f5f4eb;
-	display: block;
-	margin-bottom: .8em;
-	height: 3em;
-	text-align: center;
-	color: white;
-}*/
 
 .categoryButton {
 	padding-top: 1em;
@@ -95,12 +86,16 @@ header span {
 	box-shadow: 3px 3px #EEE;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 .column {
     padding: 5px 5px;
-    /*padding-top: 0px;*/
     background-color: #f4f3ea;
     margin: 0px 10px 20px 10px;
     box-shadow: 3px 3px #EEE;
+    overflow-y: scroll;
 }
 
 .fill {
@@ -125,16 +120,6 @@ header span {
     color: #3c2b21;
     padding-bottom: 10px;
 }
-/*
-.title2 {
-	text-align: left;
-	font-weight: bolder;
-	color: #3c2b21;
-	padding-bottom: 10px;
-	padding-top: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
-}*/
 
 #currentColumn {
 	margin-top: 40px;
@@ -177,22 +162,11 @@ header span {
 	padding-bottom: 5px;
 	font-size: inherit;
 }
-/*
-.sidebar-sort1{
-	margin-top:60px;
-	background-color: #3c2b21;
-    color: #ffffff;
-    text-align: center;
-}*/
 
 .app-unit{
-	/*padding-top:50px;
-	padding-bottom:50px;*/
 	text-align: center;
 	cursor: pointer;
 	margin-bottom: 80px;
-	/*margin-left: 60px;
-	margin-right: 60px;*/
 }
 
 .app-img{
@@ -209,6 +183,7 @@ header span {
 	text-align: center;
 	cursor: pointer;
 	top: 50%;
+	/*margin-top: 600%;*/
 }
 
 #rightarrow{
@@ -217,11 +192,10 @@ header span {
 	font-weight: bolder;
 	text-align: center;
 	cursor: pointer;
-	top: 50%;
+	/*margin-top: 600%;*/
 }
 
 h6{
-	/*font: inherit;*/
 	font-family: Helvetica;
 	font-weight: bolder;
 	text-align: center;
@@ -229,13 +203,18 @@ h6{
 }
 
 .author{
-	/*font: inherit;*/
 	font-family: Helvetica;
 	font-weight: lighter;
 	font-style: italic;
 	text-align: center;
 	font-size: .85em;
 	color: rgba(0,0,0,0.57);
+}
+
+.arrow{
+	display: block;
+	position: relative;
+	top: 50%;
 }
 
 /* end my code */
@@ -273,7 +252,7 @@ h6{
 
     .column {
         background-color: #ffffff;
-        margin: 0px 10px 20px 10px;
+        margin: 50px 10px 20px 10px;
         box-shadow: 3px 3px #CCC;
         text-align: center;
     }
@@ -309,8 +288,8 @@ h6{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		padding-top:50px;
-		padding-bottom:50px;
+		/*padding-top:50px;
+		padding-bottom:50px;*/
 		text-align: center;
 	}
 	
@@ -318,6 +297,11 @@ h6{
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
+	#sidebarcol{
+		display: hidden;
+	}
+	
 }
 
 @media (max-width: 480px) { 

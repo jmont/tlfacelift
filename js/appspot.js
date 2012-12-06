@@ -1,8 +1,9 @@
-function init() {
 
-	//useful globals
-	//var h = $(window).height();
-	var adjusted_h = $(window).height()-$("#tlnav").height();
+//useful globals
+var HEIGHT = $(window).height();
+var WIDTH = $(window).width();
+
+function init() {
     
     //sidebar
     var side_elems = ["All Apps", "Most Popular", "Recently Added"];
@@ -22,8 +23,8 @@ function init() {
     
     var page_left = "<p id=\"leftarrow\">&lt;</p>"
     var page_right = "<p id=\"rightarrow\">&gt;</p>"
-    $("#leftpage").append(page_left);
-    $("#rightpage").append(page_right);
+    $("#leftpage .arrow").append(page_left);
+    $("#rightpage .arrow").append(page_right);
     
     //existing code for navbar
     //aka dont touch
@@ -58,14 +59,19 @@ function evenOutChildren(divID) {
 
 function sizing() {
     var h = $(window).height() - 2*$("header").height();
+    var w = $(window).width();
     var mar = parseInt($("#content").css("margin-top"),10);
-    //var appH = parseInt($("#content").css("margin-top"),10)/3;
-    //$("#content").height((h-mar)
-    $("#sidebarcol").height((h-(mar/2))+"px");
-    //$("#sidebar").height((h-mar)+"px");
-    $("#leftpage").height((h-mar)+"px");
-    $("#rightpage").height((h-mar)+"px");
-    //$(".app-unit").height(appH+"px");
+    if(w > 767){ //desktop
+    	$("#sidebarcol").height((h-(mar/2))+"px");
+    	$("#leftpage").height((h-mar)+"px");
+    	$("#rightpage").height((h-mar)+"px");
+    	//$("#leftarrow").offset().top = ($("#leftpage").offset.top+$("#leftpage").height()/2);
+    }
+    else{ //mobile
+    	$("#sidebarcol").height(6*parseInt($(".categoryButton").height(),10));
+    	$("#leftpage").height("0px");
+    	$("#rightpage").height("0px");
+    }
 
 }
 

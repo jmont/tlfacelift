@@ -32,6 +32,27 @@ function displayList2(divid, strList) {
 		}
 }
 
+function displayList3(divid, strList) {
+	$(divid).html("");
+	for (i in strList)
+		{
+			if (i == 0){
+				var button = "<div class=\"categoryHeader\" >" + strList[i] + "</div>";
+				}
+			else{
+			//odds: button light, evens: button dark
+			if (i%2 == 0){
+				var button = "<a class=\"categoryButtonLight\" onclick=showPopup(this)>" + strList[i] + "</a>";
+			}
+			else {
+				var button = "<a class=\"categoryButtonDark\" onclick=showPopup(this)>" + strList[i] + "</a>";
+			}
+			}
+   			$(divid).append(button);
+		}
+}
+
+
 function header(divid, strList) {
 	$(divid).html("");
 	for (i in strList)
@@ -45,6 +66,16 @@ function header(divid, strList) {
 function rmBrown(x){
 	$(x).removeClass("brown");
 }
+
+
+function showPopup(button) {
+        $("#popupTitle").html($(button).html());
+        $("#popupDesc").html("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis velit vitae lectus imperdiet mattis condimentum vel dolor. Duis placerat mi nibh, id adipiscing neque. Phasellus ac orci nibh, vel sagittis tellus. <br /> Vivamus porta purus eget velit pretium scelerisque. Pellentesque viverra justo vitae est vehicula ultricies. Nullam ipsum tortor, malesuada et fringilla in, gravida at augue. Sed non libero sed nibh feugiat facilisis quis vitae ligula.");
+        $('#popupAuthor').html("Post by Taylor Lentz");
+        $("#popup").modal();
+}
+
+
 
 function buttonClicked(but) {
 	console.log(but + " was clicked");
@@ -68,7 +99,7 @@ function buttonClicked2(but) {
 	{
 		var test3=["Acapella", "Anchord", "S-Factor", "Shir Appeal", "sQ!", "Cultural / Religious", "The Ladies of Essence",
 			"The Beelzebubs", "Tufts Amalgamates", "Tufts Jaskson Jills"];
-		displayList2("#thirdLevel", test3);
+		displayList3("#thirdLevel", test3);
 	}
 	$("#eventsColumn").removeClass("hidden");
 	rmBrown.apply(null, $(".brown"));

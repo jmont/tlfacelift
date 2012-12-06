@@ -46,8 +46,15 @@ header span {
 	font-weight: 600;
 }
 
+
+
 .buttonTxt {
 	line-height: 2.3em;
+}
+
+.categoryButton:hover {
+	text-decoration: none;
+	cursor:pointer
 }
 
 .categoryButtonLight {
@@ -61,6 +68,11 @@ header span {
 	font-size: 1.2em;
 }
 
+.categoryButtonLight:hover {
+	text-decoration: none;
+	cursor:pointer
+}
+
 .categoryButtonDark {
 	padding-top: 8px;
 	background-color: #f4f3ea;
@@ -70,6 +82,11 @@ header span {
 	text-align: center;
 	color: #3c2b21;
 	font-size: 1.2em;
+}
+
+.categoryButtonDark:hover {
+	text-decoration: none;
+	cursor:pointer
 }
 
 .categoryHeader {
@@ -86,6 +103,11 @@ header span {
 .brown {
 	background-color: #544234;
 	color: #f4f3ea;
+}
+
+.brown:hover {
+	color: #f4f3ea;
+	text-decoration: none;
 }
 
 #content {

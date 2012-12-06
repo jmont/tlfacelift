@@ -25,12 +25,12 @@ function init() {
     $("#currentColumn").append(news);
     
     var ul = "<ul class='listingList'> \
-              <li>Hi really really long one here yes let's see how this works ok </li> \
-              <li>Hello ok here goes nothing ok ok</li> \
-              <li>Test</li> \
-              <li>wow</li> \
-              <li>no way</li> \
-              <li>Hi</li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Hi really really long one here yes let's see how this works ok</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Hello ok here goes nothing ok ok</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Test</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>wow</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>no way</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Hi</a></li> \
               <li class='showMore'>Show more listings...</li> \
               </ul>"
 

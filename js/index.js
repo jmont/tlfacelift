@@ -107,16 +107,23 @@ function evenOutChildren(divID) {
 }
 
 function sizing() {
-    var h = $(window).height() - 2*$("header").height();
-    var mar = parseInt($("#currentColumn").css("margin-top"),10);
-    $("#currentColumn").height((h-mar)+"px");
-    $("#listingsColumn").height(h+"px");
-    $("#eventsColumn").height(h+"px");
+    var w = $(window).width();
+    if (w > 767) { //Desktop
+        var h = $(window).height() - 2*$("header").height();
+        var mar = parseInt($("#currentColumn").css("margin-top"),10);
+        $("#currentColumn").height((h-mar)+"px");
+        $("#listingsColumn").height(h+"px");
+        $("#eventsColumn").height(h+"px");
+    } else { //Mobile
+        $("#currentColumn").height($("#currentColumn").scrollHeight + "px");
+        $("#listingsColumn").height($("#listingsColumn").scrollHeight + "px");
+        $("#eventsColumn").height($("#eventsColumn").scrollHeight + "px");
+    }
 }
 
 $(window).load(init);
 $(document).ready(sizing);
-//$(window).resize(sizing);
+$(window).resize(sizing);
 
 $(document).ready(fixText);
 $(window).resize(fixText);

@@ -45,6 +45,7 @@ header span {
     padding: 10px 10px;
     background-color: #ffffff;
     margin: 0px 10px 20px 10px;
+    overflow-y: scroll;
 }
 
 .boxTitle {
@@ -275,6 +276,7 @@ header span {
         background-color: #ffffff;
         margin: 0px 10px 20px 10px;
         box-shadow: 3px 3px #CCC;
+        height: auto;
     }
     
     #logo {

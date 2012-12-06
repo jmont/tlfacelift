@@ -176,6 +176,24 @@ header span {
 
 #newsimg {
     margin-top: -4px;
+    margin-bottom: 1em;
+}
+
+.newsTitle {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.newsByline {
+    font-weight: 200;
+    color: gray;
+    font-style: italic;
+    margin: .3em 0;
+}
+
+.newsMore {
+    color: gray;
+    font-style: italic;
 }
 
 #weatherImgDiv {

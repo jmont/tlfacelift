@@ -117,9 +117,9 @@ function sizing() {
         $("#listingsColumn").height(h+"px");
         $("#eventsColumn").height(h+"px");
     } else { //Mobile
-        $("#currentColumn").height($("#currentColumn").scrollHeight + "px");
-        $("#listingsColumn").height($("#listingsColumn").scrollHeight + "px");
-        $("#eventsColumn").height($("#eventsColumn").scrollHeight + "px");
+        $("#currentColumn").height($("#currentColumn").innerHeight + "px");
+        $("#listingsColumn").height($("#listingsColumn").innerHeight + "px");
+        $("#eventsColumn").height($("#eventsColumn").innerHeight + "px");
     }
 }
 

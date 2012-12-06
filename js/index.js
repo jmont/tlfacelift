@@ -49,12 +49,12 @@ function init() {
     $("#jobs").append(ul);
     
     var ul = "<ul class=\"eventsList\"> \
-              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today yay wow hyay wow hyay wow hyay wow hyay wow hyay wow hyay wow how are we goint to fo</div></div></li> \
-              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
-              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
-              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
-              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
-              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><div class=\"eventText\">ACM Meeting Today </div></div></li> \
+              <li><div class=\"eventDate\">7:00 pm</div><div class='eventContainer'><a class='eventText' onclick='buttonClicked(this, \"event\")'>ACM Meeting Today yay wow hyay wow hyay wow hyay wow hyay wow hyay wow hyay wow how are we goint to fo</a></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><a class='eventText' onclick='buttonClicked(this, \"event\")'>ACM Meeting Today </a></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><a class='eventText' onclick='buttonClicked(this, \"event\")'>ACM Meeting Today </a></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><a class='eventText' onclick='buttonClicked(this, \"event\")'>ACM Meeting Today </a></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><a class='eventText' onclick='buttonClicked(this, \"event\")'>ACM Meeting Today </a></div></li> \
+              <li><div class='eventContainer'><div class=\"eventDate\">7:00 pm</div><a class='eventText' onclick='buttonClicked(this, \"event\")'>ACM Meeting Today </a></div></li> \
               </ul>"
 
     title = "<div class=\"title bold\">EVENTS</div>"
@@ -124,7 +124,12 @@ function sizing() {
 }
 
 function buttonClicked(button, type) {
-    if (type == 'listing'){
+    if (type == 'listing') {
+        $("#popupTitle").html($(button).html());
+        $("#popupDesc").html("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis velit vitae lectus imperdiet mattis condimentum vel dolor. Duis placerat mi nibh, id adipiscing neque. Phasellus ac orci nibh, vel sagittis tellus. <br /> Vivamus porta purus eget velit pretium scelerisque. Pellentesque viverra justo vitae est vehicula ultricies. Nullam ipsum tortor, malesuada et fringilla in, gravida at augue. Sed non libero sed nibh feugiat facilisis quis vitae ligula.");
+        $('#popupAuthor').html("Post by Taylor Lentz");
+        $("#popup").modal();
+    } else if (type == 'event') {
         $("#popupTitle").html($(button).html());
         $("#popupDesc").html("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis velit vitae lectus imperdiet mattis condimentum vel dolor. Duis placerat mi nibh, id adipiscing neque. Phasellus ac orci nibh, vel sagittis tellus. <br /> Vivamus porta purus eget velit pretium scelerisque. Pellentesque viverra justo vitae est vehicula ultricies. Nullam ipsum tortor, malesuada et fringilla in, gravida at augue. Sed non libero sed nibh feugiat facilisis quis vitae ligula.");
         $('#popupAuthor').html("Post by Taylor Lentz");

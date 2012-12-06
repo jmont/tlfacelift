@@ -25,12 +25,14 @@ function init() {
     $("#currentColumn").append(news);
     
     var ul = "<ul class='listingList'> \
-              <li><a onclick='buttonClicked(this, \"listing\")'>Hi really really long one here yes let's see how this works ok</a></li> \
-              <li><a onclick='buttonClicked(this, \"listing\")'>Hello ok here goes nothing ok ok</a></li> \
-              <li><a onclick='buttonClicked(this, \"listing\")'>Test</a></li> \
-              <li><a onclick='buttonClicked(this, \"listing\")'>wow</a></li> \
-              <li><a onclick='buttonClicked(this, \"listing\")'>no way</a></li> \
-              <li><a onclick='buttonClicked(this, \"listing\")'>Hi</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Acapella concert tonight!</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Come to the Tufts Hiding society GIM</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Senate Party in the Campus Center</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Are you blue? Like drumming? Come audition for the Tufts Blue Man Group this Week!</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Come get Lox for every Box that you donate.</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Halligan is looking for a new place to live</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>Come get paid to see a sports event at Tufts! We need people!</a></li> \
+              <li><a onclick='buttonClicked(this, \"listing\")'>CAGE RAGE 2012: Cold War Kids</a></li> \
               <li class='showMore'>Show more listings...</li> \
               </ul>"
 

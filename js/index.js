@@ -121,6 +121,15 @@ function sizing() {
     }
 }
 
+function buttonClicked(button, type) {
+    if (type == 'listing'){
+        $("#popupTitle").html($(button).html());
+        $("#popupDesc").html("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis velit vitae lectus imperdiet mattis condimentum vel dolor. Duis placerat mi nibh, id adipiscing neque. Phasellus ac orci nibh, vel sagittis tellus. <br /> Vivamus porta purus eget velit pretium scelerisque. Pellentesque viverra justo vitae est vehicula ultricies. Nullam ipsum tortor, malesuada et fringilla in, gravida at augue. Sed non libero sed nibh feugiat facilisis quis vitae ligula.");
+        $('#popupAuthor').html("Post by Taylor Lentz");
+        $("#popup").modal();
+    }
+}
+
 $(window).load(init);
 $(document).ready(sizing);
 $(window).resize(sizing);

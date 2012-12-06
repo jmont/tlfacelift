@@ -34,7 +34,7 @@ header span {
     height: 100%;
     position: relative;
 }
-
+/*
 .categoryButton {
 	background-color: #f5f4eb;
 	display: block;
@@ -42,25 +42,62 @@ header span {
 	height: 3em;
 	text-align: center;
 	color: white;
+}*/
+
+.categoryButton {
+	padding-top: 1em;
+	background-color: #f4f3ea;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: .8em;
+	height: 2em;
+	text-align: center;
+	font-weight: bold;
+	color: #3c2b21;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+.categoryButtonLight {
+	padding-top: 8px;
+	background-color: #ffffff;
+	display: block;
+	margin-bottom: .3em;
+	height: 1.5em;
+	text-align: center;
+	color: #3c2b21;
+	font-size: 1.2em;
+}
+
+.categoryButtonDark {
+	padding-top: 8px;
+	background-color: #f4f3ea;
+	display: block;
+	margin-top: 0px;
+	height: 1.5em;
+	text-align: center;
+	color: #3c2b21;
+	font-size: 1.2em;
 }
 
 #content {
     min-height: inherit !important;
-    margin: 0px 10px;
+    margin: 50px 10px;
     padding: 0;
 }
 
 .contentBackground {
 	margin: .3em;
 	background-color: #ffffff;
-	height: inherit !important;
+	height: auto;
 	padding: .8em;
 	box-shadow: 3px 3px #EEE;
 }
 
 .column {
     padding: 5px 5px;
-    padding-top: 50px;
+    /*padding-top: 0px;*/
     background-color: #f4f3ea;
     margin: 0px 10px 20px 10px;
     box-shadow: 3px 3px #EEE;
@@ -88,7 +125,7 @@ header span {
     color: #3c2b21;
     padding-bottom: 10px;
 }
-
+/*
 .title2 {
 	text-align: left;
 	font-weight: bolder;
@@ -97,7 +134,7 @@ header span {
 	padding-top: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
-}
+}*/
 
 #currentColumn {
 	margin-top: 40px;
@@ -140,21 +177,22 @@ header span {
 	padding-bottom: 5px;
 	font-size: inherit;
 }
-
+/*
 .sidebar-sort1{
 	margin-top:60px;
 	background-color: #3c2b21;
     color: #ffffff;
     text-align: center;
-}
+}*/
 
 .app-unit{
-	display: block;
-	margin-left: 50px;
-	margin-right: 50px;
-	padding-top:50px;
-	padding-bottom:50px;
+	/*padding-top:50px;
+	padding-bottom:50px;*/
 	text-align: center;
+	cursor: pointer;
+	margin-bottom: 80px;
+	/*margin-left: 60px;
+	margin-right: 60px;*/
 }
 
 .app-img{
@@ -162,56 +200,28 @@ header span {
 	margin-right: auto;
 }
 
-.categoryButton {
-	padding-top: 1em;
-	background-color: #f4f3ea;
-	display: block;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom: .8em;
-	height: 2em;
-	text-align: center;
-	font-weight: bold;
-	color: #3c2b21;
-	font-size: 1.2em;
-}
 
-.categoryButtonLight {
-	padding-top: 8px;
-	background-color: #ffffff;
-	display: block;
-	margin-bottom: .3em;
-	height: 1.5em;
-	text-align: center;
-	color: #3c2b21;
-	font-size: 1.2em;
-}
-
-.categoryButtonDark {
-	padding-top: 8px;
-	background-color: #f4f3ea;
-	display: block;
-	margin-top: 0;
-	height: 1.5em;
-	text-align: center;
-	color: #3c2b21;
-	font-size: 1.2em;
-}
 
 #leftarrow{
 	font: inherit;
 	font-family: Helvetica;
 	font-weight: bolder;
+	text-align: center;
+	cursor: pointer;
+	top: 50%;
 }
 
 #rightarrow{
 	font: inherit;
 	font-family: Helvetica;
 	font-weight: bolder;
+	text-align: center;
+	cursor: pointer;
+	top: 50%;
 }
 
 h6{
-	font: inherit;
+	/*font: inherit;*/
 	font-family: Helvetica;
 	font-weight: bolder;
 	text-align: center;
@@ -219,7 +229,7 @@ h6{
 }
 
 .author{
-	font: inherit;
+	/*font: inherit;*/
 	font-family: Helvetica;
 	font-weight: lighter;
 	font-style: italic;

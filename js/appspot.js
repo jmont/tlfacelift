@@ -1,4 +1,8 @@
 function init() {
+
+	//useful globals
+	//var h = $(window).height();
+	var adjusted_h = $(window).height()-$("#tlnav").height();
     
     //sidebar
     var side_elems = ["All Apps", "Most Popular", "Recently Added"];
@@ -37,7 +41,7 @@ function init() {
 function displayList(id, aList) {
 	$(id).html("");
 	for (i in aList){
-			var it = "<a class=\"categoryButton\" onclick=\"0\">" + aList[i] + "</a>";
+			var it = "<p class=\"categoryButton\" onclick=\"0\">" + aList[i] + "</p>";
    			$(id).append(it);
 	}
 }
@@ -54,10 +58,15 @@ function evenOutChildren(divID) {
 
 function sizing() {
     var h = $(window).height() - 2*$("header").height();
-    var mar = parseInt($("#currentColumn").css("margin-top"),10);
-    $("#currentColumn").height((h-mar)+"px");
-    $("#listingsColumn").height(h+"px");
-    $("#eventsColumn").height(h+"px");
+    var mar = parseInt($("#content").css("margin-top"),10);
+    //var appH = parseInt($("#content").css("margin-top"),10)/3;
+    //$("#content").height((h-mar)
+    $("#sidebarcol").height((h-(mar/2))+"px");
+    //$("#sidebar").height((h-mar)+"px");
+    $("#leftpage").height((h-mar)+"px");
+    $("#rightpage").height((h-mar)+"px");
+    //$(".app-unit").height(appH+"px");
+
 }
 
 $(window).load(init);

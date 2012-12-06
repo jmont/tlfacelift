@@ -6,7 +6,10 @@ function init() {
                     <tr> <td>Tufts Email</td><td>Trunk</td> </tr> \
                     <tr> <td>SIS</td><td>Webcenter</td> </tr> \
                  </table></div>"
-    var weather = "<div class=\"contentBox\" id=\"weather\"><div class=\"boxTitle\">Weather</div></div>"
+    var weather = "<div class=\"contentBox\" id=\"weather\"><div class=\"boxTitle\">Weather</div> \
+                   <div id='weatherImgDiv'><img src='img/nightrain.svg'></img></div> \
+                   <div id='weatherInfo'><p>Tropical Storm<br />80 F / 70 F</p></div> \
+                   </div>"
 
     var news = "<div class=\"contentBox\" id=\"news\"><div class=\"boxTitle\">News</div> \
                 <div id='newsimg' class='crop'> \

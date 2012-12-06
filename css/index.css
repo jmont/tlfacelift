@@ -178,6 +178,31 @@ header span {
     margin-top: -4px;
 }
 
+#weatherImgDiv {
+    height: 5em;
+    display: inline;
+    float: left;
+    width: 40%;
+}
+
+#weatherImgDiv img {
+    position: relative;
+    left: 20%;
+    top: 10%;
+}
+
+#weatherInfo {
+    height: 5em;
+}
+
+#weatherInfo p {
+    text-align: center;
+    position: relative;
+    font-size: larger;
+    font-weight: 300;
+    top: 20%;
+}
+
 .crop { height: 200px; overflow: hidden; }
 .crop img { height: auto; }
 
